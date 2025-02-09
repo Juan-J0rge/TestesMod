@@ -17,7 +17,7 @@ public class ListaSeparandoFeminio {
         nomesFemininos.forEach(System.out::println);
     }
 
-    // **NOVO MÉTODO** que processa a string de entrada
+  
     public static void processarEntrada(String insiraDados) {
         String[] separaDados = insiraDados.split(",");
 

@@ -15,19 +15,18 @@ public class ClasseParaTestarTest {
     public void testarFem() {
         String input = "Ana-F, João-M, Carla-F, Pedro-M, Maria-F";
 
-        // Chama o método diretamente (sem precisar do Scanner)
+
         ListaSeparandoFeminio.processarEntrada(input);
 
-        // Obtém a lista de nomes femininos
+
         List<String> nomesFemininos = ListaSeparandoFeminio.getNomesFemininos();
 
-        // Verifica se a lista contém apenas nomes femininos
-        assertEquals(3, nomesFemininos.size()); // Deve ter exatamente 3 nomes femininos
+        assertEquals(3, nomesFemininos.size());
         assertTrue(nomesFemininos.contains("Ana"));
         assertTrue(nomesFemininos.contains("Carla"));
         assertTrue(nomesFemininos.contains("Maria"));
 
-        // Garante que a lista não contém nomes masculinos
+
         assertFalse(nomesFemininos.contains("João"));
         assertFalse(nomesFemininos.contains("Pedro"));
     }
